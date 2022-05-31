@@ -1,0 +1,17 @@
+body {
+  display: flex;
+}
+
+#container-left {
+  background-image: url(images/photo-1585202900225-6d3ac20a6962.jpeg);
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 100vh;
+}
+
+#container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
