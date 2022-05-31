@@ -112,6 +112,7 @@ label {
 
 input {
   width: max(200px, 90%);
+  margin-bottom: 10px;
 }
 
 input,
@@ -134,6 +135,7 @@ button {
 button:hover {
   background-color: #7a9464;
   border: 6px solid #7a9464;
+  cursor: pointer;
 }
 
 a {
@@ -148,6 +150,7 @@ a:hover {
 
 #login {
   font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 850px) {
@@ -183,11 +186,12 @@ a:hover {
   input,
   label {
     width: 200px;
-    margin: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   #container-form {
     grid-template-areas:
       "firstname lastname"
