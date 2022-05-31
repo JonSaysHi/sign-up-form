@@ -8,44 +8,59 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container-left"></div>
+    <div id="container-left">
+      <div id="odin">
+          <img id="logo" src="images/odin-lined.png"></img><span>ODIN</span>
+        </div>
+    </div>
     <div id="container-right">
-      <div>
+      <div class="info">
         <div>
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
+          this in your life to help you realize your deepest dreams. Sign up
+          <i>now</i>
           to get started.
         </div>
-        <div>You know you want to.</div>
+        <div>You <i>know</i> you want to.</div>
       </div>
       <div>
         <form action="">
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" name="first-name" id="first-name" />
-
-          <label for="last-name">LAST NAME</label>
-          <input type="text" name="last-name" id="last-name" />
-
-          <label for="last-name">EMAIL</label>
-          <input type="email" name="email" id="email" />
-
-          <label for="phone-number">PHONE NUMBER</label>
-          <input type="tel" name="phone-number" id="phone-number" />
-
-          <label for="password">PASSWORD</label>
-          <input type="password" name="password" id="password" />
-
-          <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input
-            type="password"
-            name="confirm-password"
-            id="confirm-password"
-          />
-
-          <button type="button">Create Account</button>
+          <div id="container-form">
+            <div class="first-name">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" required/>
+              <span></span>
+            </div>
+            <div class="last-name">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" id="last-name" required/>
+            </div>
+            <div class="email">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" required/>
+            </div>
+            <div class="phone-number">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" name="phone-number" id="phone-number" required/>
+            </div>
+            <div class="password">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" required/>
+            </div>
+            <div class="confirm-password">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </div>
+          <button type="submit">Create Account</button>
         </form>
       </div>
-      <div>Already have an account? <a href="#/">Log in</a></div>
+      <div id="login">Already have an account? <a href="#/">Log in</a></div>
     </div>
   </body>
 </html>
