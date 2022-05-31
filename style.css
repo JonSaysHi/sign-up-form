@@ -150,10 +150,6 @@ a:hover {
   font-size: 1.2rem;
 }
 
-div {
-  outline: 1px dotted orange;
-}
-
 @media (max-width: 850px) {
   body {
     display: flex;
@@ -225,15 +221,5 @@ div {
       "phonenumber"
       "password"
       "confirmpassword";
-  }
-
-  form {
-    outline: 1px solid red;
-    align-items: center;
-  }
-
-  label,
-  input {
-    outline: 1px solid green;
   }
 }
