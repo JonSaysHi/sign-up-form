@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up!</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div id="container-left">
@@ -24,7 +25,7 @@
         <div>You <i>know</i> you want to.</div>
       </div>
       <div>
-        <form action="">
+        <form action="#/" id="form">
           <div id="container-form">
             <div class="first-name">
               <label for="first-name">FIRST NAME</label>
@@ -41,7 +42,7 @@
             </div>
             <div class="phone-number">
               <label for="phone-number">PHONE NUMBER</label>
-              <input type="tel" name="phone-number" id="phone-number" required/>
+              <input type="tel" name="phone-number" id="phone-number" minlength="9" required/>
             </div>
             <div class="password">
               <label for="password">PASSWORD</label>
@@ -57,7 +58,7 @@
               />
             </div>
           </div>
-          <button type="submit">Create Account</button>
+          <button id="button" type="submit">Create Account</button>
         </form>
       </div>
       <div id="login">Already have an account? <a href="#/">Log in</a></div>
