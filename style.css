@@ -9,6 +9,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  background-color: #f8f8f8;
 }
 
 @font-face {
@@ -253,4 +254,13 @@ a:hover {
       "password"
       "confirmpassword";
   }
+}
+
+.white-background {
+  margin-left: -3rem;
+  padding-left: 3rem;
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px 15px 10px -15px rgb(148, 148, 148);
 }
