@@ -1,3 +1,7 @@
+:root {
+  --padding-left: 3rem;
+}
+
 html,
 body {
   width: 100%;
@@ -62,6 +66,7 @@ body {
   margin-top: 200px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 span {
   margin-top: 20px;
 }
@@ -77,13 +82,21 @@ span {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
   width: 60vw;
+}
+
+form {
+  width: 100%;
+  padding-left: var(--padding-left);
+}
+
+#login {
+  padding-left: var(--padding-left);
 }
 
 .info {
   font-size: min(1.5rem, 3vw);
+  padding-left: var(--padding-left);
 }
 
 .info div:first-child {
@@ -153,7 +166,7 @@ a:hover {
   margin-bottom: 20px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 885px) {
   body {
     display: flex;
     flex-direction: column;
@@ -162,13 +175,15 @@ a:hover {
 
   #container-left {
     width: 100vw;
-    height: 100vh;
+    height: 250px;
     margin-bottom: 30px;
     background-image: cover;
+    display: flex;
+    align-items: center;
   }
 
   #odin {
-    margin-top: 80px;
+    margin-top: 10%;
     width: 100%;
   }
 
@@ -181,6 +196,8 @@ a:hover {
     grid-template-areas:
       "firstname lastname email"
       "phonenumber password confirmpassword";
+    justify-content: center;
+    width: 100vw;
   }
 
   input,
@@ -188,6 +205,16 @@ a:hover {
     width: 200px;
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  form {
+    width: 100vw;
+    padding: 0;
+  }
+
+  #login {
+    font-size: 1rem;
+    padding: 0;
   }
 }
 
@@ -197,12 +224,12 @@ a:hover {
       "firstname lastname"
       "email phonenumber"
       "password confirmpassword";
-    width: 40%;
   }
 
   .info {
     font-size: max(1rem, 3vw);
     width: 300px;
+    padding: 0;
   }
 
   button {
