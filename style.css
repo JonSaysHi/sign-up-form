@@ -144,6 +144,7 @@ button {
   background-color: #596d48;
   border: 6px solid #596d48;
   border-radius: 10px;
+  box-shadow: 15px 15px 10px -15px rgb(148, 148, 148);
 }
 
 button:hover {
